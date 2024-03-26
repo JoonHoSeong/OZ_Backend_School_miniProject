@@ -28,7 +28,8 @@
 ## 실행화면
 
 ### 기능 구현 화면
-
+#### 기본 요구 사항 구현
+<img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot1.png' alt='screenshot'>
 
 
 ### [미니프로젝트 더보기](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main)
