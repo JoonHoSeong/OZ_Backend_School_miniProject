@@ -23,7 +23,7 @@ data.forEach((item) => {
 
 
 function set_Update_Date() {
-    let time = new Date();   
+    let time = new Date(document.lastModified);   
     const date_string = ('('+time.getFullYear()+'-'+(time.getMonth()+1)+'-'+time.getDate()+')');
     docTitle = document.getElementById('docTitle')
     docTitle.innerText += date_string
