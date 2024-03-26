@@ -12,7 +12,7 @@
 <body>
     <div class="container mt-3">
         <h3 class="mt-5 mb-3">신규 등록 상품</h3>
-        <form class="row row-cols-lg-auto g-3 align-items-center">      
+        <form class="row row-cols-lg-auto g-4 align-items-center flex-wrap">      
             <div class="col-12">
               <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
               <select class="form-select" id="inlineFormSelectPref">
@@ -34,14 +34,31 @@
                   <option class = 'gender' value="common">공용</option>
                 </select>
               </div>
-            <div class="col-3">
+            <div class="col-3 flex-fill">
                 <!-- input 입력창 코드를 넣어주세요 -->
-                <input type="text" id="product_name_input" class='form-control' placeholder="제품명을 입력해 주세요">
+                <input type="text" id="product_name_input" class='form-control flex-grow-1' placeholder="제품명을 입력해 주세요">
               </div>
               <div class="col-auto">
                 <!-- 조회라는 이름의 버튼 만들기 -->
-                <button id="search-button" class="btn btn-primary" style="margin-left: 0;">조회</button>
+                <button id="search-button" class="btn btn-primary" value="search">조회</button>
               </div>
+              <div class="col-auto">
+                <!-- 선택 삭제라는 이름의 버튼 만들기 -->
+                <button id="search-button" class="btn btn-light btn-outline-dark" value="select_all">전체 선택</button>
+              </div>
+              <div class="col-auto">
+                <!-- 선택 삭제라는 이름의 버튼 만들기 -->
+                <button id="search-button" class="btn btn-danger " value="del">선택 삭제</button>
+              </div>
+
+              <!-- 테스트
+              <div class="d-grid gap-2 d-md-flex ">
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button>
+              </div> -->
+
+              
+
           </form>
           <div class="container mt-3">
         <table class="table table-sm">
@@ -50,6 +67,7 @@
                 <thead>
                     <tr>
                         <!-- <th scope="col">선택</th> -->
+                        <th scope="col">선택</th>
                         <th scope="col">카테고리</th>
                         <th scope="col">브랜드</th>
                         <th scope="col">상품명</th>
@@ -65,7 +83,7 @@
     </div>
     <!-- 페이지 네이션 코드를 넣어주세요 -->
     <nav aria-label="...">
-        <ul class="pagination  justify-content-center"">
+        <ul class="pagination  justify-content-center">
             <li class="page-item disabled">
                 <span class="page-link">Previous</span>
             </li>
@@ -92,13 +110,17 @@
         ];
 
         const dataTable = document.getElementById('data-table');
+        let product_num = 0;
         data.forEach((item) => {
+            console.log(item)
             const row = dataTable.insertRow();
-            row.insertCell(0).innerHTML = item.category;
-            row.insertCell(1).innerHTML = item.brand;
-            row.insertCell(2).innerHTML = item.product;
-            row.insertCell(3).innerHTML = item.price;
-            row.insertCell(4).innerHTML = item.gender;
+            row.insertCell(0).innerHTML = `<input class="form-check-input" type="checkbox" id="${product_num}_check">`
+            row.insertCell(1).innerHTML = item.category;
+            row.insertCell(2).innerHTML = item.brand;
+            row.insertCell(3).innerHTML = item.product;
+            row.insertCell(4).innerHTML = item.price;
+            row.insertCell(5).innerHTML = item.gender;
+            product_num += 1
     });
 
     </script>
