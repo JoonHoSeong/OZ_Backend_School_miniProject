@@ -9,4 +9,4 @@
 ## miniProject
 | 순서 | 프로젝트명 | 작성 기간  | 작성 언어  | 
 | --- | --- | --- | --- |
-| 1 | [Admin페이지 프론트단 제작](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/Admin_Page_Project) | '24.03.26. ~ |  |
+| 1 | [Admin페이지 프론트단 제작](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main/Admin_Page_Project) | '24.03.26. ~ |  |
