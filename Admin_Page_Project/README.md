@@ -41,4 +41,7 @@
 ##### 체크 박스 추가 및 삭제 버튼 만들기
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot4.png' alt='screenshot'> 
 
+##### 체크 박스 추가 및 삭제 버튼 만들기
+<img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot5.png' alt='screenshot'> 
+
 ### [미니프로젝트 더보기](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main)
