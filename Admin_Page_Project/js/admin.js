@@ -3,6 +3,8 @@ const cloth_gender = document.getElementById('cloth_gender');
 const dataTable = document.getElementById('data-table');
 const searchButton = document.getElementById('search-button');
 const inputText = document.getElementById('product_name_input');
+const check = document.getElementsByName('check');
+const selectAllButton = document.getElementById('select-all-button');
 
 
 
@@ -29,7 +31,7 @@ function insertTable(data){
     let product_num = 0;
     data.forEach((item) => {
         const row = dataTable.insertRow();
-        row.insertCell(0).innerHTML = `<input class="form-check-input" type="checkbox" id="${product_num}_check">`
+        row.insertCell(0).innerHTML = `<input class="form-check-input" type="checkbox" id="${product_num}_check" name="check">`
         row.insertCell(1).innerHTML = item.category;
         row.insertCell(2).innerHTML = item.brand;
         row.insertCell(3).innerHTML = item.product;
@@ -73,7 +75,6 @@ function select_filter(){
 
 function search_filter(){
     filter_data = select_filter()
-    console.log(filter_data)
     filter_data = filter_data.filter(function(item){
         if (item.product.includes(inputText.value) || item.brand.includes(inputText.value)) {
             return item.product
@@ -81,6 +82,7 @@ function search_filter(){
     })
     return filter_data
 }
+
 
 
 
@@ -99,6 +101,7 @@ cloth_gender.addEventListener('change', function(){
     insertTable(filter_data)
 });
 
+//검색 기능 구현
 searchButton.addEventListener('click', function(e){
     e.preventDefault();
     dataTable.innerHTML = ''
@@ -106,4 +109,14 @@ searchButton.addEventListener('click', function(e){
     filter_data = search_filter()
     console.log(filter_data)
     insertTable(filter_data)
+});
+
+
+selectAllButton.addEventListener('click', function(e){
+    e.preventDefault();
+    for (let i = 0; i < check.length; i++) {
+        if (!check[i].checked) {
+            check[i].checked = true;
+        }
+    }
 });

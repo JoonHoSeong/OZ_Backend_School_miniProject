@@ -23,8 +23,8 @@
 ### 추가 구현 기능
 - [X] 카테고리 필터 추가하기
 - [X] 성별 필터 추가하기
-- [X] 검색기능 추가하기
-- [ ] 전체 선택 기능 추가하기
+- [X] 검색기능 추가하기(브랜드 혹은 상품명 검색)
+- [X] 전체 선택 기능 추가하기
 - [ ] 선택 삭제기능 추가하기
 - [ ] 페이지네이션 기능 추가하기
 - [ ] 실제 데이터 크롤링 및 적용하기
@@ -62,5 +62,8 @@
 
 ##### 검색 기능 추가
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot8.png' alt='screenshot'> 
+
+##### 전체 선택 기능 추가
+<img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot9.png' alt='screenshot'> 
 
 ### [미니프로젝트 더보기](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main)
