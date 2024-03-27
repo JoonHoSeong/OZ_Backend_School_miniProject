@@ -22,8 +22,8 @@
 - [X] 테이블 하단 또는 상단에 github 아이콘을 넣어주세요 그리고 이미지 클릭하면 여러분의 깃허브 주소로 이동하도록 만들주세요.  
 
 ### 추가 구현 기능
-- [ ] 카테고리 필터 추가하기
-- [ ] 성별 필터 추가하기
+- [X] 카테고리 필터 추가하기
+- [X] 성별 필터 추가하기
 - [ ] 검색기능 추가하기
 - [ ] 전체 선택 기능 추가하기
 - [ ] 선택 삭제기능 추가하기
@@ -52,7 +52,13 @@
 ##### 체크 박스 추가 및 삭제 버튼 만들기
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot4.png' alt='screenshot'> 
 
-##### 체크 박스 추가 및 삭제 버튼 만들기
+##### 업데이트 날짜 제목에 표시하기
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot5.png' alt='screenshot'> 
+
+##### 카테고리 필터 추가하기
+<img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot6.png' alt='screenshot'> 
+
+##### 성별 필터 추가
+<img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot7.png' alt='screenshot'> 
 
 ### [미니프로젝트 더보기](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main)
