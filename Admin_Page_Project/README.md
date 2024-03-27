@@ -11,7 +11,7 @@
 ## 🖥IDEs/Editors
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-## 프로젝트 기간
+## 🗓프로젝트 기간
 -  **기본요구사항 :'24.03.26 ~ '24.03.26**
 - **더 만들어볼 기능 : '24.03.26 ~ '24.03.26**
 -  **기능 구현 : '24.03.27 ~ '24.03. 00**
