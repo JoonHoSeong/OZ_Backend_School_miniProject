@@ -5,39 +5,38 @@ const searchButton = document.getElementById('search-button');
 const inputText = document.getElementById('product_name_input');
 const check = document.getElementsByName('check');
 const selectAllButton = document.getElementById('select-all-button');
+const selectDelButton = document.getElementById('select-del-button');
 
 
 
 // 사전정의 데이터(크롤링 코드 작성시 미사용)
 const data = [
-{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티', price: '390,000',gender:'남성'},
-{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠', price: '188,000',gender:'여성' },
-{ category: "신발", brand: 'Nike', product: '에어포스 1', price: '137,000' ,gender:'공용'},
-{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링', price: '29,000' ,gender:'공용'},
-{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티11', price: '390,000',gender:'남성'},
-{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠11', price: '188,000',gender:'여성' },
-{ category: "신발", brand: 'Nike', product: '에어포스 1 11', price: '137,000' ,gender:'공용'},
-{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링11', price: '29,000' ,gender:'공용'},
-{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티22', price: '390,000',gender:'남성'},
-{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠22', price: '188,000',gender:'여성' },
-{ category: "신발", brand: 'Nike', product: '에어포스 1 22', price: '137,000' ,gender:'공용'},
-{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링22', price: '29,000' ,gender:'공용'},    // ...
+{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티', price: '390,000',gender:'남성', id:0},
+{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠', price: '188,000',gender:'여성', id:1},
+{ category: "신발", brand: 'Nike', product: '에어포스 1', price: '137,000' ,gender:'공용',id:2},
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링', price: '29,000' ,gender:'공용',id:3},
+{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티11', price: '390,000',gender:'남성',id:4},
+{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠11', price: '188,000',gender:'여성' ,id:5},
+{ category: "신발", brand: 'Nike', product: '에어포스 1 11', price: '137,000' ,gender:'공용',id:6},
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링11', price: '29,000' ,gender:'공용',id:7},
+{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티22', price: '390,000',gender:'남성',id:8},
+{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠22', price: '188,000',gender:'여성',id:9},
+{ category: "신발", brand: 'Nike', product: '에어포스 1 22', price: '137,000' ,gender:'공용',id:10},
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링22', price: '29,000' ,gender:'공용',id:11},    // ...
 ];
 
 let filter_data = data
 
 //테이블에 데이터 집어넣기
 function insertTable(data){
-    let product_num = 0;
     data.forEach((item) => {
         const row = dataTable.insertRow();
-        row.insertCell(0).innerHTML = `<input class="form-check-input" type="checkbox" id="${product_num}_check" name="check">`
+        row.insertCell(0).innerHTML = `<input class="form-check-input" type="checkbox" id='${item.id}' name="check">`
         row.insertCell(1).innerHTML = item.category;
         row.insertCell(2).innerHTML = item.brand;
         row.insertCell(3).innerHTML = item.product;
         row.insertCell(4).innerHTML = item.price;
         row.insertCell(5).innerHTML = item.gender;
-        product_num += 1
     });
 }
 insertTable(data)
@@ -54,14 +53,14 @@ set_Update_Date()
 
 
 function select_filter(){
-    filter_data = data.filter(function(item){
+    let filtered_data = filter_data.filter(function(item){
         if (cloth_type_button.value == '전체'){
             return item.category
         }
         return item.category == cloth_type_button.value
         
     });
-    filter_data = filter_data.filter(function(item){
+    filtered_data = filtered_data.filter(function(item){
         if (cloth_gender.value == '전체'){
             return item.gender
         }
@@ -70,19 +69,18 @@ function select_filter(){
         }
         return item.gender == cloth_gender.value
     });
-    return filter_data
+    return filtered_data
 }
 
 function search_filter(){
-    filter_data = select_filter()
-    filter_data = filter_data.filter(function(item){
+    let filtered_data = select_filter()
+    filtered_data = filtered_data.filter(function(item){
         if (item.product.includes(inputText.value) || item.brand.includes(inputText.value)) {
             return item.product
         }
     })
-    return filter_data
+    return filtered_data
 }
-
 
 
 
@@ -90,25 +88,23 @@ function search_filter(){
 // 선택 옷종류
 cloth_type_button.addEventListener('change', function(){
     dataTable.innerHTML = ''
-    filter_data = select_filter()
-    insertTable(filter_data)
+    let filtered_data = select_filter()
+    insertTable(filtered_data)
 });
 
 //성별 선택
 cloth_gender.addEventListener('change', function(){
     dataTable.innerHTML = ''
-    filter_data = select_filter()
-    insertTable(filter_data)
+    let filtered_data = select_filter()
+    insertTable(filtered_data)
 });
 
 //검색 기능 구현
 searchButton.addEventListener('click', function(e){
     e.preventDefault();
     dataTable.innerHTML = ''
-    console.log('a')
-    filter_data = search_filter()
-    console.log(filter_data)
-    insertTable(filter_data)
+    let filtered_data = search_filter()
+    insertTable(filtered_data)
 });
 
 
@@ -120,3 +116,15 @@ selectAllButton.addEventListener('click', function(e){
         }
     }
 });
+
+selectDelButton.addEventListener('click', function(e){
+    e.preventDefault();
+    let checked_item = document.querySelectorAll('.form-check-input:checked');
+    checked_item.forEach(function(item){
+        console.log(item.id)
+        console.log()
+        item.parentElement.parentElement.remove()
+        delete filter_data[item.id]
+    })
+    console.log(filter_data)
+})

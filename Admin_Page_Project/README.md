@@ -66,4 +66,8 @@
 ##### 전체 선택 기능 추가
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot9.png' alt='screenshot'> 
 
+##### 선택항목 삭제 기능 추가
+<img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot10.png' alt='screenshot'> 
+
+
 ### [미니프로젝트 더보기](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main)
