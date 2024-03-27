@@ -1,6 +1,8 @@
 const cloth_type_button = document.getElementById('cloth_type');
 const cloth_gender = document.getElementById('cloth_gender');
 const dataTable = document.getElementById('data-table');
+const searchButton = document.getElementById('search-button');
+const inputText = document.getElementById('product_name_input');
 
 
 
@@ -51,7 +53,6 @@ set_Update_Date()
 
 function select_filter(){
     filter_data = data.filter(function(item){
-        console.log('1')
         if (cloth_type_button.value == '전체'){
             return item.category
         }
@@ -59,7 +60,6 @@ function select_filter(){
         
     });
     filter_data = filter_data.filter(function(item){
-        console.log('2')
         if (cloth_gender.value == '전체'){
             return item.gender
         }
@@ -68,6 +68,17 @@ function select_filter(){
         }
         return item.gender == cloth_gender.value
     });
+    return filter_data
+}
+
+function search_filter(){
+    filter_data = select_filter()
+    console.log(filter_data)
+    filter_data = filter_data.filter(function(item){
+        if (item.product.includes(inputText.value) || item.brand.includes(inputText.value)) {
+            return item.product
+        }
+    })
     return filter_data
 }
 
@@ -85,5 +96,14 @@ cloth_type_button.addEventListener('change', function(){
 cloth_gender.addEventListener('change', function(){
     dataTable.innerHTML = ''
     filter_data = select_filter()
+    insertTable(filter_data)
+});
+
+searchButton.addEventListener('click', function(e){
+    e.preventDefault();
+    dataTable.innerHTML = ''
+    console.log('a')
+    filter_data = search_filter()
+    console.log(filter_data)
     insertTable(filter_data)
 });
