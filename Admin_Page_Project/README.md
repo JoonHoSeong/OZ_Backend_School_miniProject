@@ -8,13 +8,16 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+## 🖥IDEs/Editors
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
 ## 프로젝트 기간
 -  **기본요구사항 :'24.03.26 ~ '24.03.26**
 - **더 만들어볼 기능 : '24.03.26 ~ '24.03.26**
 -  **기능 구현 : '24.03.27 ~ '24.03. 00**
 - **Self Challenge : '24.00.00 ~ '24.00. 00**
 
-## 멤버 구성
+## 👤멤버 구성
 1. [JoonHoSeong](https://github.com/JoonHoSeong)
 
 ## 실행 방법
