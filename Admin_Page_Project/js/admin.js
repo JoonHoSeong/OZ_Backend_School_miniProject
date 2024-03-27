@@ -22,7 +22,19 @@ const data = [
 { category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티22', price: '390,000',gender:'남성',id:8},
 { category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠22', price: '188,000',gender:'여성',id:9},
 { category: "신발", brand: 'Nike', product: '에어포스 1 22', price: '137,000' ,gender:'공용',id:10},
-{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링22', price: '29,000' ,gender:'공용',id:11},    // ...
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링22', price: '29,000' ,gender:'공용',id:11},
+{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티', price: '390,000',gender:'남성', id:12},
+{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠', price: '188,000',gender:'여성', id:13},
+{ category: "신발", brand: 'Nike', product: '에어포스 1', price: '137,000' ,gender:'공용',id:14},
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링', price: '29,000' ,gender:'공용',id:15},
+{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티11', price: '390,000',gender:'남성',id:16},
+{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠11', price: '188,000',gender:'여성' ,id:17},
+{ category: "신발", brand: 'Nike', product: '에어포스 1 11', price: '137,000' ,gender:'공용',id:18},
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링11', price: '29,000' ,gender:'공용',id:19},
+{ category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티22', price: '390,000',gender:'남성',id:20},
+{ category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠22', price: '188,000',gender:'여성',id:21},
+{ category: "신발", brand: 'Nike', product: '에어포스 1 22', price: '137,000' ,gender:'공용',id:22},
+{ category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링22', price: '29,000' ,gender:'공용',id:23},    // ...
 ];
 
 let filter_data = data
@@ -121,10 +133,7 @@ selectDelButton.addEventListener('click', function(e){
     e.preventDefault();
     let checked_item = document.querySelectorAll('.form-check-input:checked');
     checked_item.forEach(function(item){
-        console.log(item.id)
-        console.log()
         item.parentElement.parentElement.remove()
         delete filter_data[item.id]
     })
-    console.log(filter_data)
 })
