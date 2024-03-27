@@ -119,7 +119,7 @@ cd Admin_Page_Project/html
 </details>
 
 ## 프로젝트 구조
-'''
+```
 .
 ├── Admin_Page_Project
 │   ├── README.md
@@ -144,6 +144,6 @@ cd Admin_Page_Project/html
 │           └── github_icon.png
 ├── LICENSE
 └── README.md
-'''
+```
 
 ### [미니프로젝트 더보기](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main)
