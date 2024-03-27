@@ -3,7 +3,7 @@
 
 # Admin Page Project
 
-## 사용 기술
+## 💬사용 기술
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -20,7 +20,7 @@
 ## 👤멤버 구성
 1. [JoonHoSeong](https://github.com/JoonHoSeong)
 
-## 실행 방법
+## 🗞실행 방법
 1. Git Repo Clone
 
 ```
@@ -32,14 +32,14 @@ cd Admin_Page_Project/html
 ```
 3. Run HTML File
 
-## 기능
+## 🤖기능
 - 카테고리별로 의류를 필터링 할 수 있습니다.
 - 성별로 의류를 필터링 할 수 있습니다.
 - 검색 기능으로 브랜드, 제품명을 검색해서 볼 수 있습니다.
 - 체크 박스를 통해 원하는 제품을 삭제 할 수 있습니다.
 
 
-## 프로젝트 내용
+## 👉프로젝트 내용
 ### 기본 요구 사항
 - [X] 카테고리(셀렉트)를 클릭하면 상의, 하의, 신발, 패션잡화 메뉴가 나오게 코드 작성  
 - [X] 입력 버튼 안에 “제품명을 입력해주세요"  
@@ -70,7 +70,7 @@ cd Admin_Page_Project/html
 
 <hr>
 
-## 실행화면
+## 💻실행화면
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot.gif'>
 <details><summary>기본 요구 사항 구현
 </summary>
@@ -121,7 +121,7 @@ cd Admin_Page_Project/html
 <img src='https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/Admin_Page_Project/image/screenshot10.png' alt='screenshot'> 
 </details>
 
-## 프로젝트 구조
+## 🌲프로젝트 구조
 ```
 .
 ├── Admin_Page_Project
