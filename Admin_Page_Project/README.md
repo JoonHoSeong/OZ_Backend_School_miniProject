@@ -8,6 +8,10 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+## :man_mechanic:구동환경
+### OS
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)   Ventura
+
 ## 🖥IDEs/Editors
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
@@ -28,7 +32,7 @@ git clone https://github.com/JoonHoSeong/OZ_Backend_School_miniProject.git
 ```
 2. Move to Project HTML Folder
 ```
-cd Admin_Page_Project/html
+cd Oz_backend_School/Admin_Page_Project/html
 ```
 3. Run HTML File
 

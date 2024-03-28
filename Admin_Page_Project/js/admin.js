@@ -119,7 +119,7 @@ searchButton.addEventListener('click', function(e){
     insertTable(filtered_data)
 });
 
-
+//전체 선택 버튼
 selectAllButton.addEventListener('click', function(e){
     e.preventDefault();
     for (let i = 0; i < check.length; i++) {
@@ -128,7 +128,7 @@ selectAllButton.addEventListener('click', function(e){
         }
     }
 });
-
+// 삭제버튼
 selectDelButton.addEventListener('click', function(e){
     e.preventDefault();
     let checked_item = document.querySelectorAll('.form-check-input:checked');
