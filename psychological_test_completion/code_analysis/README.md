@@ -29,6 +29,8 @@ poetry install
 4. Init DB 
 `
 cd code_analysis
+`
+`
 poetry run flask init-db
 `  
 5. Run Flask  
