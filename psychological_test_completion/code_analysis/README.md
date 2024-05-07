@@ -36,8 +36,8 @@ poetry run flask run
 `  
 
 ## Usecase
-![title](https://github.com/JoonHoSeong/OZ_Backend_School_SideProject/blob/main/dummyMaker_MYSQL/image/image.png)   
+![title](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/psychological_test_completion/code_analysis/images/usecase_diagram.jpg)   
 ## Flowchart
-![title](https://github.com/JoonHoSeong/OZ_Backend_School_SideProject/blob/main/dummyMaker_MYSQL/image/image.png)   
-## [Code Analysis Blog](https://github.com/JoonHoSeong/OZ_Backend_School_SideProject/blob/main/dummyMaker_MYSQL/image/image.png)   
+![title](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/blob/main/psychological_test_completion/code_analysis/images/flow-chart.jpg)   
+## [Code Analysis Blog](https://slowprogramer.tistory.com/entry/miniProject-%EC%8B%AC%EB%A6%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B6%84%EC%84%9D%ED%95%B4%EB%B3%B4%EC%9E%90)   
 
