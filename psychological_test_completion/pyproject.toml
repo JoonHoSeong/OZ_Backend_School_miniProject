@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "psychological-test-completion"
+version = "0.1.0"
+description = ""
+authors = ["JoonHoSeong <joonho1366@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+plotly = "^5.22.0"
+flask-migrate = "^4.0.7"
+pandas = "^2.2.2"
+sqlalchemy = "^2.0.30"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
