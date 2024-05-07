@@ -1,4 +1,6 @@
+CREATE DATABASE YES24;
 
+USE YES24;
 
 CREATE TABLE Books (
     bookID INT AUTO_INCREMENT PRIMARY KEY,
@@ -13,3 +15,4 @@ CREATE TABLE Books (
     ranking INT,
     ranking_weeks INT
 );
+
