@@ -22,7 +22,7 @@
 ## Usages
 1. Clone the project into your local repository.
 2. Install poetry
-3. Install Dependancy  (on psychological_test_completion Folder)
+3. Install Dependancy  (on psychological_test_completion Folder)  
 `
 poetry install
 `  
