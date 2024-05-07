@@ -26,11 +26,10 @@
 `
 poetry install
 `  
-4. Init DB 
+4. Init DB  
 `
 cd code_analysis
-`
-<br>
+`  
 `
 poetry run flask init-db
 `  
