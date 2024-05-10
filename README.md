@@ -26,11 +26,4 @@
 | --- | --- | --- | --- |
 | 1 | [Admin페이지 프론트단 제작](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main/Admin_Page_Project) | '24.03.26. ~ | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) |
 | 2 | [Book Crawling](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main/Crwaling_book_info) | '24.04.25. ~ | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white) |
-| 3 | [psychological_test_completion](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main/psychological_test_completion) | '24.05.07. ~ | 
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![sqlalchemy](https://img.shields.io/badge/sqlalchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
-![poetry](https://img.shields.io/badge/poetry-60A5FA?style=for-the-badge&logo=poetry&logoColor=white) | 
+| 3 | [psychological_test_completion](https://github.com/JoonHoSeong/OZ_Backend_School_miniProject/tree/main/psychological_test_completion) | '24.05.07. ~ | | 
